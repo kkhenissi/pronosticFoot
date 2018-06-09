@@ -1,0 +1,21 @@
+<mat-expansion-panel class="temp-margin" expanded>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Vivez le suspence avec Momo Pronostic
+
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-tab-group class="tab-border">
+    <mat-tab label="Choisir les Bases">
+     <app-list-matches (tableaAafficherPret)="onTableaAafficherPret($event)"></app-list-matches>
+    </mat-tab>
+
+    <mat-tab label="Cas possibles">
+        <div fxLayout="column" class="siga-marge-tableau">
+            <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+          <!--   <ng2-smart-table  [settings]="settings" [source]="source"></ng2-smart-table> -->
+        </div>
+     
+    </mat-tab>
+  </mat-tab-group>
+</mat-expansion-panel>

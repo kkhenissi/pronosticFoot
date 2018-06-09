@@ -1,0 +1,23 @@
+.example-radio-group {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  
+  .example-selected-value {
+    margin: 15px 0;
+  }
+/*   mat-icon {
+    color: purple;
+  } */
+  .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }

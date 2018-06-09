@@ -1,0 +1,22 @@
+.example-card {
+       max-width: 90%;
+     
+  }
+  .centrage-card {
+      padding-left: 40%;
+    max-width: 150%;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/ballon.jpg');
+    background-size: cover;
+  }
+  .positione1 {
+    padding-left: 18px;
+  }
+  .positione2 {
+    padding-left: 11px;
+  }
+  .positione3 {
+    padding-left: 13px;
+  }

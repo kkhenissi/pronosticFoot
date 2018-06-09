@@ -1,0 +1,39 @@
+
+ 
+<mat-card class="example-card">
+    <mat-card-header  class="centrage-card">
+        
+        <mat-card-title>Momo Pronostic</mat-card-title>
+   </mat-card-header>
+   <mat-card-content class="centrage-card">
+        <span class="positione1">{{head}}</span> <span class="positione2">{{head2}}</span> <span class="positione3">{{head3}}</span>
+        <div *ngFor="let match of matches">
+                    {{match.numero}}
+                      <mat-checkbox [(ngModel)]="match.gagne"></mat-checkbox>
+                      <mat-checkbox [(ngModel)]="match.machnulle"></mat-checkbox> 
+                      <mat-checkbox [(ngModel)]="match.perdu"></mat-checkbox> 
+        </div>  
+      </mat-card-content>
+    
+      <mat-card-actions  class="centrage-card">
+          <button mat-button [disabled]='!canValidate' (click)="fliterPronostic()">Envoyez</button>
+          <button mat-button (click)="initialisetout()">Initialisez</button>
+        </mat-card-actions>
+</mat-card>
+
+
+<!-- 
+<mat-checkbox 
+  #chowDetails
+  [value]=""
+  [checked]="isChecked"
+  (change)="onChange($event)"
+>Show details</mat-checkbox> -->
+
+<!-- 
+<mat-card>
+    <div fxLayout="column" fxLayoutAlign="space-between stretch">
+
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        
+        <mat-form-field fxFlex="40"> -->
