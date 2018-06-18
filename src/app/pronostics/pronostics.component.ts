@@ -38,7 +38,7 @@ export class PronosticsComponent  {
  */
 initPronosTable() {
     this.settings = {
-    actions: false,
+   // actions: false,
     hideHeader: true,
     hideSubHeader: true,
       columns: {
